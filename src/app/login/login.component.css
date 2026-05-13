@@ -1,0 +1,114 @@
+/* Full page background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+}
+
+/* Center the form */
+.row {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card design */
+.col-md-4 {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 380px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title (optional if you add heading) */
+.col-md-4::before {
+    content: "Login";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Labels */
+.form-label {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Inputs */
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+    outline: none;
+}
+
+/* Buttons container */
+.form-group:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Buttons */
+.btn {
+    width: 48%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Login button */
+.btn-success {
+    background: linear-gradient(135deg, #28a745, #20c997);
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Cancel button */
+.btn-danger {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
